@@ -1,13 +1,15 @@
 package com.shoppyng.service.Impl;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
-import com.shoppyng.entities.Client;
-import com.shoppyng.entities.Panier;
-import com.shoppyng.entities.Produit;
+import org.springframework.stereotype.Service;
+
+import com.shoppyng.modele.Panier;
+import com.shoppyng.modele.Produit;
 import com.shoppyng.service.PanierService;
 
+@Service
 public class PanierServiceImpl implements PanierService{
 	
 

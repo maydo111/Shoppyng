@@ -2,8 +2,8 @@ package com.shoppyng.service;
 
 import java.util.List;
 
-import com.shoppyng.entities.Panier;
-import com.shoppyng.entities.Produit;
+import com.shoppyng.modele.Panier;
+import com.shoppyng.modele.Produit;
 
 public interface PanierService {
 	public void addProduit(Panier panier ,Produit produit);

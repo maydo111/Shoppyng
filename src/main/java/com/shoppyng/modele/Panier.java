@@ -1,13 +1,11 @@
-package com.shoppyng.entities;
+package com.shoppyng.modele;
 
 import java.util.List;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 
 public class Panier {
 	
-	@Id @GeneratedValue
+	
 	  private long id ;
 	  private  Client client;
 	  private List<Produit> listProduits ;

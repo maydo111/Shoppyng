@@ -1,10 +1,8 @@
-package com.shoppyng.entities;
+package com.shoppyng.modele;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 
 public class Client {
-	@Id @GeneratedValue
+	
 	  private long id ;
 	  private  String nom;
 	  private String prenom ;

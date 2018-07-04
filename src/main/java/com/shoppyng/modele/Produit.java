@@ -1,13 +1,8 @@
-package com.shoppyng.entities;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+package com.shoppyng.modele;
 
 
-@Entity
 public class Produit {
-	@Id @GeneratedValue
+
   private long id ;
   private String libelle;
   private Double prix ;

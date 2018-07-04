@@ -6,20 +6,22 @@ import java.util.List;
 
 import org.junit.Test;
 import org.junit.Before;
+
 import static org.junit.Assert.*;
+
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.shoppyng.entities.Client;
-import com.shoppyng.entities.Panier;
-import com.shoppyng.entities.Produit;
+import com.shoppyng.modele.Client;
+import com.shoppyng.modele.Panier;
+import com.shoppyng.modele.Produit;
 import com.shoppyng.service.PanierService;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ShoppyngProjectApplicationTests {
+public class PanierServiceTest {
     private Panier panier;
     private Produit produit1;
     private Produit produit2;
@@ -50,13 +52,13 @@ public class ShoppyngProjectApplicationTests {
 	public void testAddProduit() {
 		 Produit produit4 = new Produit(4,"prouit4",20.50);
 		panierService.addProduit(panier, produit4);
-		assertEquals(3,panier.getListProduits().size());
+		assertEquals(4,panier.getListProduits().size());
 	}
 	
 	@Test
 	public void testMontantFinal() {
 		Double montantFinal = panierService.getMontantTotal(panier);
-		assertEquals(12.5,montantFinal,0.001);
+		assertEquals(121.5,montantFinal,0.001);
 	}
 
 }

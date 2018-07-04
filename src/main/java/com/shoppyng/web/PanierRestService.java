@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.shoppyng.entities.Panier;
-import com.shoppyng.entities.Produit;
+import com.shoppyng.modele.Panier;
+import com.shoppyng.modele.Produit;
 import com.shoppyng.service.PanierService;
 
 @RestController
